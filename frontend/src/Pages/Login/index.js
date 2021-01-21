@@ -61,13 +61,7 @@ function Login() {
 
  const dotcom = email.indexOf('.com') > -1;
  
-    if(validEmail === false){
-      setResposta(`insira '@' apos ' ${email} ' no seu email`)
-    setTimeout(()=>{
-      setResposta("")
-    },3000)
-    return
-    }
+
 
     if(dotcom === false){
       setResposta(`seu email ' ${email} ' está incompleto`)
@@ -81,6 +75,14 @@ function Login() {
     if(email === ''){
       setResposta("digite seu email")
      setTimeout(()=>{
+      setResposta("")
+    },3000)
+    return
+    }
+
+    if(validEmail === false){
+      setResposta(`insira '@' apos ' ${email} ' no seu email`)
+    setTimeout(()=>{
       setResposta("")
     },3000)
     return
