@@ -1,0 +1,170 @@
+
+$inputColor:#6C757E;
+
+.login_wrapper{
+    height: 100vh;
+    width: 100%;
+ 
+    background: #000;
+    background-position: center;
+    background-size: contain;
+    color:#fff;
+    background-image: linear-gradient(130deg ,#16181b,#16181b,#16181B,#16181B),url(../../Assets/img/bg.jpg);
+    // background:url(../../Assets/img/bg.jpg);
+    // background-size: 200% 200%;
+    // animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .login_container{
+        min-height: 300px;
+        height: auto;
+        width: 350px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 100px 30px;
+        position: absolute;
+        left:50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        .login{
+            min-height: 200px;
+            height: auto;
+            width:400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            // border-radius: 10px;
+            padding: 80px 0;
+            position: relative;
+            z-index: 10;
+            // background-image: linear-gradient(#16181B,#16181B,#2E3339);
+            background: #6c757e1f;
+            // border: 1px solid $inputColor;
+            .title_wrapper{
+                font-size: 2.5em;
+                font-weight: 600;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+            .input-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:350px;
+                input{
+                    width:290px;
+                    height: 60px; 
+                    outline: none;
+                    margin-bottom: 10px;
+                    outline: none;
+                    background: none;
+                    color: $inputColor;
+                    border: none;
+                    padding: 0px 0px 0px 15px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    appearance: none;
+                    border: 1px solid $inputColor;
+                    border-right: none;
+                    background: #6c757e1f;
+                    
+                    &::placeholder{
+                    text-transform: uppercase;
+                    color: $inputColor;
+                    letter-spacing: 2px;
+                    }
+        
+                }
+                  .icon_container{
+                    height: 60px; 
+                    width: 60px;
+                    border: 1px solid $inputColor;
+                    position: relative;
+                    top: -5px;
+                    transition: all ease-in-out .3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                    height: 20px; 
+                    width: 20px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all ease-in-out .3s;
+                    }
+                  }
+
+                  .pass{
+                    cursor: pointer;
+                    transition: all ease-in-out .3s;
+                    &:hover{
+                        background: #6c757e1f;
+                    }
+                  }
+
+   
+            }
+
+
+            button{
+                width:350px;
+                height: 60px; 
+                // border-radius: 4px;
+                // border: 1px solid $inputColor;
+                border: none;
+                background: blue;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $inputColor;
+                color: #fff;
+                letter-spacing: 2px;
+                cursor: pointer;
+                transition: .3s;
+                outline: none;
+                &:hover{
+                    background: #6c757e33;
+                    border: 1px solid #6c757e00;
+                }
+        
+            }
+            .MuiOutlinedInput-root{
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+}
+
+.resposta{
+    height: 50px;
+    text-transform: uppercase;
+    // color: #ff0028;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: rgba(255, 255, 255, 0.151);
+    position: absolute;
+    font-size: 12px;
+    bottom: 20px;
+    transition: all ease-in-out .3s;
+}

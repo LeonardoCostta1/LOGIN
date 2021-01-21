@@ -1,0 +1,239 @@
+.login_wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  background-position: center;
+  background-size: contain;
+  color: #fff;
+  background-image: linear-gradient(130deg, #16181b, #16181b, #16181B, #16181B), url(../../Assets/img/bg.jpg);
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login_wrapper .login_container {
+  min-height: 300px;
+  height: auto;
+  width: 350px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login_wrapper .login_container .login {
+  min-height: 200px;
+  height: auto;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 0;
+  position: relative;
+  z-index: 10;
+  background: #6c757e1f;
+}
+
+.login_wrapper .login_container .login .title_wrapper {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login_wrapper .login_container .login .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+}
+
+.login_wrapper .login_container .login .input-container input {
+  width: 290px;
+  height: 60px;
+  outline: none;
+  margin-bottom: 10px;
+  outline: none;
+  background: none;
+  color: #6C757E;
+  border: none;
+  padding: 0px 0px 0px 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #6C757E;
+  border-right: none;
+  background: #6c757e1f;
+}
+
+.login_wrapper .login_container .login .input-container input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #6C757E;
+  letter-spacing: 2px;
+}
+
+.login_wrapper .login_container .login .input-container input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #6C757E;
+  letter-spacing: 2px;
+}
+
+.login_wrapper .login_container .login .input-container input::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #6C757E;
+  letter-spacing: 2px;
+}
+
+.login_wrapper .login_container .login .input-container input::placeholder {
+  text-transform: uppercase;
+  color: #6C757E;
+  letter-spacing: 2px;
+}
+
+.login_wrapper .login_container .login .input-container .icon_container {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #6C757E;
+  position: relative;
+  top: -5px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login_wrapper .login_container .login .input-container .icon_container i {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.login_wrapper .login_container .login .input-container .pass {
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.login_wrapper .login_container .login .input-container .pass:hover {
+  background: #6c757e1f;
+}
+
+.login_wrapper .login_container .login button {
+  width: 350px;
+  height: 60px;
+  border: none;
+  background: blue;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6C757E;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  outline: none;
+}
+
+.login_wrapper .login_container .login button:hover {
+  background: #6c757e33;
+  border: 1px solid #6c757e00;
+}
+
+.login_wrapper .login_container .login .MuiOutlinedInput-root {
+  margin-bottom: 20px;
+}
+
+.resposta {
+  height: 50px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  font-size: 12px;
+  bottom: 20px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+/*# sourceMappingURL=style.css.map */
