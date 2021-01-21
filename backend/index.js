@@ -96,6 +96,15 @@ app.get("/read/:id", async (req, res) => {
   }
 });
 
-app.listen(4000, () => {
+app.get("/", async (req, res) => {
+  try {
+    const user = await User.find();
+    res.json(user);
+  } catch (error) {
+    res.status(500);
+  }
+});
+
+app.listen(3000, () => {
   console.log("ON");
 });
